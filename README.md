@@ -3,7 +3,7 @@
 ## Tasks
 
 
-*0. Factorize all the things!*
+**0. Factorize all the things!**
 
 Factorize as many numbers as possible into a product of two smaller numbers.
 
@@ -23,3 +23,16 @@ Factorize as many numbers as possible into a product of two smaller numbers.
     Push all your scripts, source code, etc… to your repository
         we will only run your executable factors
 
+
+**1. RSA Factoring Challenge**
+
+RSA Laboratories states that: for each RSA number n, there exist prime numbers p and q such that
+
+n = p × q. The problem is to find these two primes, given only n.
+
+This task is the same as task 0, except:
+
+    p and q are always prime numbers
+    There is only one number in the files
+
+How far can you go in less than 5 seconds?
