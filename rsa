@@ -1,0 +1,38 @@
+#!/usr/bin/python3
+
+import sys
+
+
+def factorize_number(number):
+
+    if number % 2 == 0:
+        return (number // 2, 2)
+
+    i = 3
+    while i < number // 2:
+        if number % i == 0:
+            return (number // i, i)
+        i = i + 2
+
+    return (number, 1)
+
+
+def read_num_from_file(file_name):
+
+    try:
+        with open(file_name) as fd:
+            for number in fd:
+                num = int(number)
+                factors = factorize_number(num)
+                print("{}={}*{}".format(num, factors[0], factors[1]))
+    except:
+        pass
+
+
+if __name__ == "__main__":
+
+    if len(sys.argv) != 2:
+        sys.exit(1)
+
+    input_file = sys.argv[1]
+    read_num_from_file(input_file)
